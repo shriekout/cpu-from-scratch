@@ -1,4 +1,4 @@
-// Not
+// Not https://www.tinkercad.com/things/kDo7gXcV9Rs-not?sharecode=80bI4dCh5ljKVVtS3CEp7z1b2w2sI7_mjRNZLjgqZBA
 // Serial input: 0, 1
 
 const int in1 = 2;

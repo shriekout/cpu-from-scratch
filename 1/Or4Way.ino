@@ -1,4 +1,4 @@
-// Or 4bit
+// Or4Way https://www.tinkercad.com/things/bYCJstKS6tB-or4way?sharecode=VOEg4UQ1JsJCuRaBSePWUEyWL9fRugl4ClIB6IUPcok
 // Serial input: 0000
 
 void setup()

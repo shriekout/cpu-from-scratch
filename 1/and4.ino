@@ -1,4 +1,4 @@
-// And16
+// And4 https://www.tinkercad.com/things/7b7DuoETWAA-and4?sharecode=jnwDAN2ErF6gV4C3c1Fq9xt522QPlyYc02CbWWyfqQQ
 // 0000 0000 => 0000 & 0000
 
 void setup()
