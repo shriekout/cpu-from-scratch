@@ -8,8 +8,14 @@ int outB[] = {6, 7};
 int inSum[] = {10, 11};
 int inCarry = A0;
 
+void printResult(int *val);
+
 void setup()
 {
+  int x[bits], y[bits];
+  int sum[bits];
+  int carry;
+  
   Serial.begin(9600);
   
   for (int i = 0; i < bits; i++) {
@@ -18,47 +24,47 @@ void setup()
     pinMode(inSum[i], INPUT);
   }
   pinMode(inCarry, INPUT);
-}
-
-void loop()
-{
-  int sum[bits];
-  int carry;
   
   for (int i = 0; i < (1 << bits); i++) {
     for (int j = 0; j < (1 << bits); j++) {
       
       for (int k = 0; k < bits; k++) {
-      	int x = (i >> k) & 1;
-        Serial.print(x);
-        digitalWrite(outA[k], x);
+      	x[k] = (i >> k) & 1;
+        digitalWrite(outA[k], x[k]);
       }
-      
-      Serial.print("\t");
       
       for (int k = 0; k < bits; k++) {
-      	int y = (j >> k) & 1;
-        Serial.print(y);
-        digitalWrite(outB[k], y);
+      	y[k] = (j >> k) & 1;
+        digitalWrite(outB[k], y[k]);
       }
       
-      delayMicroseconds(10);  // 안정화 대기
-
-      Serial.print("\t");
+      delay(1);  // 안정화 대기
       
       for (int k = 0; k < bits; k++) {
       	sum[k] = digitalRead(inSum[k]);
-        Serial.print(sum[k]);
       }
       
-      Serial.print("\t");
       carry = digitalRead(inCarry);
-      Serial.print(carry);
       
-      Serial.println();
+      // 결과 출력
+      Serial.print("A=");
+      printResult(x);
+      Serial.print(" B=");
+      printResult(y);
+      Serial.print(" | Sum=");
+      printResult(sum);
+      Serial.print(" Carry=");
+      Serial.println(carry);
     }
   }
-  
-  Serial.print("===");
-  Serial.println();
+}
+
+void loop()
+{
+}
+
+void printResult(int *val)
+{
+  for (int i = bits-1; i >= 0; i--)
+    Serial.print(*(val+i));
 }
