@@ -21,3 +21,11 @@
 이 과정이 얼마나 걸릴지는 모르겠습니다. 시간은 많이 걸리겠지만 하나하나 만들어 가는 재미를 찾겠습니다.
 
 Just Have Fun!
+
+---
+
+### 시뮬레이션 도움
+
+- Tinkercad https://www.tinkercad.com/
+- Cirkit Designer https://www.cirkitstudio.com/
+- Fritzing https://fritzing.org/
