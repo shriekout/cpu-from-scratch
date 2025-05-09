@@ -1,6 +1,6 @@
 # CPU From Scratch
 
-도서 "밑바닥부터 만드는 컴퓨팅 시스템" 노암 니산, 시몬 쇼켄 저/김진홍 역 | 인사이트(insight) 프로젝트를 수행하다가 직접 만들어 보고 싶어졌습니다.
+도서 "밑바닥부터 만드는 컴퓨팅 시스템" 노암 니산, 시몬 쇼켄 저/김진홍 역 | 인사이트(insight) 프로젝트를 수행하다가 컴퓨터를 직접 만들어 보고 싶어졌습니다.
 
 원제는 "The Elements of Computing Systems" by Noam Nisan and Shimon Schocken
 
