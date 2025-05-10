@@ -8,9 +8,9 @@
 
 ---
 
-- 1차 목표는 8비트 ALU(Arithmetic Logic Unit)를 직접 만들어 보는 것입니다.
+- 1차 목표는 16비트 ALU(Arithmetic Logic Unit)를 직접 만들어 보는 것입니다.
 
-- 2차 목표는 8비트 CPU(Central Processing Unit)를 만드는 것이며,
+- 2차 목표는 16비트 CPU(Central Processing Unit)를 만드는 것이며,
 
 - 최종목표는 책 제목 답게 테트리스를 직접 할 수 있는 컴퓨터를 만드는 것입니다.
 
